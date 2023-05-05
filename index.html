@@ -5,12 +5,339 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevApps - Developing Softwares</title>
+    <title>Akshay's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+
+    <!-- CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./css/stylesheet.css">
+
+    <!-- To include components -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#projects").load("projects.html");
+        });
+    </script>
+
 </head>
 
 <body>
-    <p>This is my potfolio website</p>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link me-3" href="#home">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="#technologies">Technologies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <img class="mb-3" src="assets/img-5.jpg" height="600px" width="100%" />
+
+    <!-- Services -->
+    <div class="p-3 bg-light" id="services">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm text-center" style="width: 250px;">
+                <h1><i class="bi bi-window-stack"></i></h1>
+                <h4>Web Application Development</h4>
+                <h6 class="text-muted">
+                    Your small or big ideas can be transformed into a custom software to make them
+                    more competitive in the digital world.
+                </h6>
+            </div>
+            <div class="col-sm text-center" style="width: 250px;">
+                <h1><i class="bi bi-app-indicator"></i></h1>
+                <h4>Enterprise Application Development</h4>
+                <h6 class="text-muted">
+                    A customized cutting-edge software solution to meet your specific business needs
+                    and to harness the power of all the data that you gather.
+                </h6>
+            </div>
+            <div class="col-sm text-center" style="width: 250px;">
+                <h1><i class="bi bi-globe"></i></h1>
+                <h4>Static Website Development</h4>
+                <h6 class="text-muted">
+                    Impress your customers with contemporary designs that will help you build a strong
+                    perception of
+                    your business.
+                </h6>
+            </div>
+            <div class="col-sm text-center" style="width: 250px;">
+                <h1><i class="bi bi-clipboard2-data"></i></h1>
+                <h4>Data Analytics</h4>
+                <h6 class="text-muted">
+                    Structuring the data acquired and transforming it into relevant information for
+                    your organization and thus making appropriate decisions.
+                </h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <!-- <div id="projects"></div>     -->
+
+    <!-- Technologies -->
+    <div class="card m-3" id="technologies">
+        <div class="card-body">
+            <div class="container-fluid">
+                <h3 class="text-center">Technologies</h3>
+                <h5 class="fw-light">
+                    A collection of technologies like MySQL, Express Js, Angular Js and Node Js that is used for
+                    building complex and interactive web applications. This technology stack is used to develop new
+                    modules and features.
+                </h5>
+                <hr />
+                <div class="container-fluid text-center">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div style="height: 130px;">
+                                <img class="mb-3" src="assets/img-1.png" width="40%" />
+                            </div>
+                            <h4>HTML5, CSS3, Bootstrap v5.3, and JavaScript (JS)</h4>
+                            <p6 class="text-muted">
+                                Technologies which enables the developers to create modern, feature-rich, and
+                                user-friendly
+                                websites and web applications that work well on different devices and screen sizes. They
+                                are
+                                commonly used in combination to build responsive, interactive, and visually appealing
+                                websites
+                                with a wide range of functionality.
+                            </p6>
+                        </div>
+                        <div class="col-sm">
+                            <div style="height: 130px;">
+                                <img class="mb-3" src="assets/img-2.png" width="40%" />
+                            </div>
+                            <h4>Angular 14</h4>
+                            <p6 class="text-muted">
+                                Angular is a popular open-source web application framework developed and maintained by
+                                Google,
+                                and it is used for building dynamic, single-page applications (SPAs) and progressive web
+                                applications (PWAs).
+                            </p6>
+                        </div>
+                        <div class="col-sm">
+                            <div style="height: 130px;">
+                                <img class="mb-3" src="assets/img-3.png" width="70%" />
+                            </div>
+                            <h4>NodeJS, MySQL</h4>
+                            <p6 class="text-muted">
+                                Node.js provides a powerful and scalable server-side runtime environment, and MySQL can
+                                be used
+                                as a database backend to store and retrieve data. Together, they can be used to build
+                                various
+                                types of server-side applications, such as web applications, APIs, microservices, and
+                                more.
+                            </p6>
+                        </div>
+                        <div class="col-sm">
+                            <div style="height: 130px;">
+                                <img class="mb-3" src="assets/img-4.png" width="40%" />
+                            </div>
+                            <h4>Java Standard Edition</h4>
+                            <p6 class="text-muted">
+                                Java SE is widely used for developing a wide range of applications, including desktop
+                                applications, enterprise applications, web applications, mobile applications, and
+                                embedded
+                                systems. Java code written on one platform can run on any platform that supports Java,
+                                making it
+                                highly portable and platform-independent.
+                            </p6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="card m-3" id="about">
+        <div class="card-body">
+            <div class="container-fluid">
+                <h3 class="text-center">About Me</h3>
+                <hr />
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <img class="" src="assets/profile.jpg" width="50%" style="border-radius: 50%;" />
+                        <h3 class="card-title">Akshay Chavan</h3>
+                        <h6 class="card-subtitle text-muted mb-2">Software Developer</h6>
+                        <a class="btn btn-sm btn-outline-success mb-3" href="assets/Akshay_Resume.pdf" role="button"
+                            download>
+                            <i class="bi bi-download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                    <div class="col-sm-8 d-flex align-items-center">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                Pursuing M.E. in Computer Engineering.
+                            </li>
+                            <li class="list-group-item">
+                                2 years of experience on working with various technologies.
+                            </li>
+                            <li class="list-group-item">
+                                Versed with technologies like HTML, CSS, JS, Bootstrap, Angular, NodeJS,
+                                MySQL, Postman and GitHub.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="card m-3" id="contact">
+        <div class="card-body">
+            <div class="container-fluid">
+                <h3 class="text-center">Contact Details</h3>
+                <h5 class="fw-light">
+                    Please feel free to get in touch with me, or alternatively, complete and submit the form, and I will
+                    be able to connect with you shortly.
+                </h5>
+                <hr />
+                <div class="row">
+                    <div class="col-sm-6 mb-3">
+                        <div class="d-flex flex-column bd-highlight mb-3">
+                            <div class="p-2 bd-highlight mb-3">
+                                <i class="bi bi-phone" style="color: black;"></i> Phone :
+                                <a href="tel:+919881237517">
+                                    +91 9881237517
+                                </a>
+                            </div>
+                            <div class="p-2 bd-highlight mb-3">
+                                <i class="bi bi-whatsapp" style="color: green;"></i> WhatsApp :
+                                <a
+                                    href="https://api.whatsapp.com/send?text=Hi, I have viewed your portfolio website and want to connect with you.&phone=9881237517">Send
+                                    a message
+                                </a>
+                            </div>
+                            <div class="p-2 bd-highlight mb-3">
+                                <i class="bi bi-envelope" style="color: brown;"></i> Email :
+                                <a href="mailto:akshaychavanaxy@gmail.com">
+                                    akshaychavanaxy@gmail.com
+                                </a>
+                            </div>
+                            <div class="p-2 bd-highlight mb-3">
+                                <i class="bi bi-linkedin" style="color: blue;"></i> Linked In: <a
+                                    href="https://www.linkedin.com/in/akshaychavan25/">
+                                    My LinkedIn profile
+                                </a>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <i class="bi bi-geo-alt"></i> Location : Pune, Maharashtra.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <form method="POST">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="name@example.com">
+                                <label for="name"><span style="color: red;">*</span> Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="phone" placeholder="name@example.com"
+                                    onkeypress="return /[0-9]/i.test(event.key)" maxlength="10">
+                                <label for="phone"><span style="color: red;">*</span> Phone</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                <label for="email"><span style="color: red;">*</span> Email Address</label>
+                            </div>
+                            <div class="form-floating mb-5">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="message"
+                                    style="height: 100px"></textarea>
+                                <label for="message"><span style="color: red;">*</span> Message</label>
+                            </div>
+
+                            <button type="button" class="btn btn-sm btn-primary w-100" onclick="sendMessage()">Send
+                                message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-light text-center p-3">
+        <p class="mt-3">
+            © 2023 Copyright. All rights reserved. DevApps - Developing Software Solutions.
+        </p>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script>
+
+        function sendMessage() {
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            var body = "You have a new enquiry from your portfolio website. Details are as follows: <br/><br/>" + "Name: " + name + "<br /> Phone: " + "+91" + phone + "<br /> Email: " + email + "<br /> Message: " + message + "<br/><br/> Thanks and regards,<br>dwm.infodesk";
+
+            if (name == '' || phone == '' || email == '' || message == '') {
+                alert("All fields are compulsory. Please fill all the fields.");
+            } else {
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "dwm.infodesk@gmail.com",
+                    Password: "46B97F6DB3353B498F1498D914BB156B29E4",
+                    To: 'akshaychavanaxy@gmail.com',
+                    From: "dwm.infodesk@gmail.com",
+                    Subject: "New Enquiry",
+                    Body: body
+                }).then(
+                    alert("Your details have been recorded, we'll connect shortly."),
+                    document.getElementById("name").value = '',
+                    phone = document.getElementById("phone").value = '',
+                    email = document.getElementById("email").value = '',
+                    message = document.getElementById("message").value = ''
+                );
+            }
+        }
+    </script>
 </body>
 
 </html>
