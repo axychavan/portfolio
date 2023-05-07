@@ -20,57 +20,36 @@
     <!-- Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="./css/stylesheet.css">
+    <!-- Type it -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 
-    <!-- To include components -->
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <!-- To include project.html -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
         </script>
     <script>
         $(function () {
             $("#projects").load("projects.html");
-        });
+        });  
     </script>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+    </style>
 
 </head>
 
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link me-3" href="#home">Home</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-3" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-3" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-3" href="#technologies">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-3" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-3" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <!-- Home -->
-    <img class="mb-3" src="assets/img-5.jpg" height="600px" width="100%" />
+    <div class="d-flex align-items-center text-center p-3" style="height: 700px;background-color:powderblue;">
+        <h1 id="headings"></h1>
+    </div>
 
     <!-- Services -->
     <div class="p-3 bg-light" id="services">
@@ -119,10 +98,10 @@
         <div class="card-body">
             <div class="container-fluid">
                 <h3 class="text-center">Technologies</h3>
-                <h6 class="fw-light">
+                <h5 class="fw-light">
                     My chosen tech-stack for developing a web application consists of Angular for the front-end, Node.js
                     for the back-end, and MySQL as the database management system.
-                </h6>
+                </h5>
                 <hr />
                 <div class="container-fluid text-center">
                     <div class="row">
@@ -181,6 +160,10 @@
         <div class="card-body">
             <div class="container-fluid">
                 <h3 class="text-center">About Me</h3>
+                <h5 class="fw-light">
+                    I am looking for a job or a project where I can apply my technical and analytical abilities to
+                    support the organization's growth and simultaneously enhance my personal development.
+                </h5>
                 <hr />
                 <div class="row">
                     <div class="col-sm-4 text-center">
@@ -217,9 +200,10 @@
         <div class="card-body">
             <div class="container-fluid">
                 <h3 class="text-center">Contact Details</h3>
-                <h6 class="fw-light">
-                    If you require any further information, feel free to contact me.
-                </h6>
+                <h5 class="fw-light">
+                    If I can be of any assistance or you need to inquire about something, please do not hesitate to
+                    contact me.
+                </h5>
                 <hr />
                 <div class="row">
                     <div class="col-sm-6 mb-3">
@@ -290,6 +274,14 @@
             © 2023 Copyright. All rights reserved. Akshay Chavan.
         </p>
     </div>
+
+    <script>
+        new TypeIt("#headings", {
+            strings: ["OUR SOLUTION TO ALL YOUR I.T. NEEDS.","Scroll up to find out more."],
+            speed: 100,
+            waitUntilVisible: true,
+        }).go();
+    </script>
 
     <!-- <script src="https://smtpjs.com/v3/smtp.js">
     </script>
